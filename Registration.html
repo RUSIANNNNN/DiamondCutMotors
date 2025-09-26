@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Registration.css">
+</head>
+<body>
+    <header>
+        <div class="nav main-container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="#" class="logo">DiamondCut<span>Motors</span></a>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Cars</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="#parts">Parts</a></li>
+                <li><a href="index.html">Showroom</a></li>
+                <li><a href="Registration.html" class="active">Registration</a></li>
+            </ul>
+            <i class='bx bx-search' id="search-icon"></i>
+            <div class="search-box main-container">
+                <input type="search" name="" id="" placeholder="search here....">
+            </div>
+        </div>
+    </header>
+
+    <div class="main-cocntainer">
+    <div class="container">
+        <form action="index.html" id="form" novalidate>
+            <h1>Registration</h1> <br>
+            <div class="input_section">
+                <label for="username">Username<span class="required-color">*</span></label> <br>    
+                <input type="text" placeholder="Input your username" class="input-box" id="username" required/>
+            </div>
+            <div class="input_section"> 
+                <label for="email">Email<span class="required-color">*</span></label> <br>
+                <input type="email" placeholder="Input your email" class="input-box" id="email" required/>
+            </div>
+            <div class="input_section">
+                <label for="phone">Phone Number<span class="required-color">*</span></label> <br>
+                <input type="text" placeholder="Input your phone number" class="input-box" id="phone" required/>
+            </div>
+            <div class="input_section">
+                <label for="password">Password<span class="required-color">*</span></label> <br>
+                <input type="password" placeholder="Input your password" class="input-box" id="password" required/>
+            </div>
+            <div class="input_section">
+                <label for="confirmpassword">Confirm Password<span class="required-color">*</span></label> <br>
+                <input type="password" placeholder="Input your password" class="input-box" id="confirmpassword" required/>
+            </div>
+            <p>Already have an account? Click <a href="login.html">here</a></p>
+            <div class="input_section">
+                <input type="checkbox" id="terms-and-services">
+                <label for="terms-and-services">Terms and services</label>
+            </div>
+            <button type="submit" id="submit-button">Submit</button>
+    
+            <p id="error" class="error" style="color: red;"></p>
+        </form>
+    </div>
+    </div>
+    
+    <script src="registration.js"></script>
+
+</body>
+</html>

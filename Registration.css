@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url(img/background-regis.jpg);
+    background-size: 125% 125%;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+header.shadow{
+    background: white;
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+    transition: 0.5s ease;
+}
+
+header.shadow #search-icon{
+    color: black;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+    display: none;
+}
+
+.logo{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo span{
+        color: red  ;
+}
+
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar a{
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar a:hover, 
+.navbar .active{
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+#search-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+    border: 1px solid red;
+    border-radius: 0.5rem;
+    clip-path: circle(0 at 100% 0%);
+}
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.1s;
+}
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.main-container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    width: 500px;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 3rem;
+    padding: 2rem;
+    
+    margin: 5rem auto;
+}
+
+.container h1{
+    text-align: center;
+}
+
+h4{
+    font-size: 1.5rem;
+
+}
+
+.input_section{
+    margin: 0.5rem;
+}
+
+.input-box{
+    width: 100%;
+}
+
+label{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+button{
+    padding: 0.2rem;
+    font-size: 1rem;
+    background-color: rgb(255, 138, 157);
+    border-radius: 0.3rem;
+    margin: 0.5rem  ;
+    color: white;
+    display: block;
+    width: 20%;
+}
+
+input{
+    padding: 0.5rem 0.5rem;
+    border: 1.5px solid;
+    border-radius: 0.3rem;
+}
+
+.required-color{
+    color: red;
+}
+
+.valid{
+    border-color: green;
+}
+
+.error{
+    padding: 10px;
+}
+
